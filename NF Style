@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NF STYLE | Minimal Fashion</title>
+  <style>
+    /* ----- RESET ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Prompt", sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    /* ----- HEADER ----- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      border-bottom: 1px solid #eee;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 400;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #777;
+    }
+
+    /* ----- HERO SECTION ----- */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #fafafa;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .hero p {
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      background-color: #111;
+      color: #fff;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #444;
+    }
+
+    /* ----- PRODUCT SECTION ----- */
+    .products {
+      padding: 80px 60px;
+      text-align: center;
+    }
+
+    .products h3 {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+    }
+
+    .product {
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product h4 {
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    /* ----- FOOTER ----- */
+    footer {
+      text-align: center;
+      padding: 40px;
+      background-color: #fafafa;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .products {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NF STYLE</h1>
+    <nav>
+      <ul>
+        <li><a href="#">หน้าแรก</a></li>
+        <li><a href="#">สินค้า</a></li>
+        <li><a href="#">เกี่ยวกับเรา</a></li>
+        <li><a href="#">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Minimal Streetwear for Everyday Life</h2>
+    <p>แฟชั่นเรียบง่าย แต่มีสไตล์ในแบบของคุณ</p>
+    <button class="btn">SHOP NOW</button>
+  </section>
+
+  <section class="products">
+    <h3>สินค้าแนะนำ</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x400" alt="เสื้อยืดมินิมอล">
+        <h4>เสื้อยืดมินิมอล</h4>
+        <p>฿490</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x400" alt="เสื้อเชิ้ต Oversized">
+        <h4>เสื้อเชิ้ต Oversized</h4>
+        <p>฿690</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x400" alt="กางเกงผ้าฝ้าย">
+        <h4>กางเกงผ้าฝ้าย</h4>
+        <p>฿790</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 NF STYLE. All rights reserved.
+  </footer>
+
+</body>
+</html>
