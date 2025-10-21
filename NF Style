@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NF STYLE | Minimal Fashion</title>
   <style>
-    /* ----- RESET ----- */
     * {
       margin: 0;
       padding: 0;
@@ -19,7 +18,6 @@
       line-height: 1.6;
     }
 
-    /* ----- HEADER ----- */
     header {
       display: flex;
       justify-content: space-between;
@@ -51,7 +49,6 @@
       color: #777;
     }
 
-    /* ----- HERO SECTION ----- */
     .hero {
       text-align: center;
       padding: 100px 20px;
@@ -85,7 +82,6 @@
       background-color: #444;
     }
 
-    /* ----- PRODUCT SECTION ----- */
     .products {
       padding: 80px 60px;
       text-align: center;
@@ -129,9 +125,25 @@
     .product p {
       color: #777;
       font-size: 0.9rem;
+      margin-bottom: 10px;
     }
 
-    /* ----- FOOTER ----- */
+    .view-btn {
+      display: inline-block;
+      padding: 8px 18px;
+      background-color: #111;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .view-btn:hover {
+      background-color: #444;
+    }
+
     footer {
       text-align: center;
       padding: 40px;
@@ -178,21 +190,28 @@
   <section class="products">
     <h3>สินค้าแนะนำ</h3>
     <div class="product-grid">
+
       <div class="product">
         <img src="https://via.placeholder.com/300x400" alt="เสื้อยืดมินิมอล">
         <h4>เสื้อยืดมินิมอล</h4>
         <p>฿490</p>
+        <a href="product.html" class="view-btn">ดูรายละเอียด</a>
       </div>
+
       <div class="product">
         <img src="https://via.placeholder.com/300x400" alt="เสื้อเชิ้ต Oversized">
         <h4>เสื้อเชิ้ต Oversized</h4>
         <p>฿690</p>
+        <a href="product.html" class="view-btn">ดูรายละเอียด</a>
       </div>
+
       <div class="product">
         <img src="https://via.placeholder.com/300x400" alt="กางเกงผ้าฝ้าย">
         <h4>กางเกงผ้าฝ้าย</h4>
         <p>฿790</p>
+        <a href="product.html" class="view-btn">ดูรายละเอียด</a>
       </div>
+
     </div>
   </section>
 
